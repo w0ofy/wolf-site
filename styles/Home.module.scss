@@ -1,0 +1,38 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem 0;
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.nav {
+  display: flex;
+  padding: 3rem 0;
+
+  & > .nav-item {
+    padding-right: 2rem;
+  }
+}
