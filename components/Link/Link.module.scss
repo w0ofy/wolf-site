@@ -1,4 +1,4 @@
-.anchor {
+.link {
   color: var(--link-color);
   border-bottom: 2px solid var(--link-border-color);
   text-decoration: none;
@@ -6,8 +6,8 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: unset;
-  transition: all .2s ease-in-out;
-  
+  transition: all 0.2s ease-in-out;
+
   &:hover {
     color: var(--link-hover-color);
     border-bottom-color: var(--link-hover-color);

@@ -1,0 +1,14 @@
+.icon {
+  &.sm {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  &.md {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+  &.lg {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+}

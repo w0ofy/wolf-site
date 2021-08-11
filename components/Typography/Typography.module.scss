@@ -1,18 +1,26 @@
-.h1, .h2, .h3, .span, .p {
+.h1,
+.h2,
+.h3,
+.span,
+.p {
   margin: 0;
   padding: 0;
   color: var(--font-color);
   letter-spacing: 0;
-  line-height: 2.2rem;
-  font-size: 2.2rem;
+  line-height: 2rem;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 .h1 {
   font-size: 10rem;
   font-weight: 800;
   line-height: 12rem;
+  &.resume {
+    font-size: 5rem;
+    line-height: 1;
+  }
 }
 
 .h3 {
@@ -23,5 +31,12 @@
 .sup {
   font-size: 1.6rem;
   line-height: 1.6rem;
+  vertical-align: super;
+}
+
+.button {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
   vertical-align: super;
 }

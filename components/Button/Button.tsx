@@ -1,25 +1,32 @@
-import React from "react";
-import IonIcon from '@reacticons/ionicons';
-import { RenamePropType } from 'utils/RenamePropType';
+import React, { forwardRef } from 'react';
+import NextLink from 'next/link';
 import styles from './Button.module.scss';
-
-type IonIconProps = Pick<React.ComponentProps<typeof IonIcon>, 'name'>;
-type Icon = RenamePropType<IonIconProps, 'name', 'icon'>;
+import { Typography } from 'components/Typography';
+import { Icon, IconProps } from 'components/Icon/Icon';
 
 export type ButtonProps = {
   children?: React.ReactNode;
-} &  React.ButtonHTMLAttributes<HTMLButtonElement> & Icon;
+} & React.ButtonHTMLAttributes<HTMLButtonElement> &
+  Partial<Pick<IconProps, 'icon'>>;
 
-/**
- * This is just an Icon Button, for now
- */
-const Button = ({ icon, ...restProps}: ButtonProps) => {
+const Button = ({ icon, children, ...restProps }: ButtonProps) => {
   return (
-    <button className={styles.btn} {...restProps} >
-      {/** @ts-ignore Icon type should work just fine - @todo investigate why throws a type error */ }
-      {icon && <IonIcon name={icon} />}
+    <button className={styles.btn} {...restProps}>
+      {/** @ts-ignore Icon type should work just fine - @todo investigate why throws a type error */}
+      {icon && <Icon icon={icon} />}
+      {children && <Typography.Button>{children}</Typography.Button>}
     </button>
-  )
+  );
 };
+
+const Link = ({ href, ...restProps }: { href: string } & ButtonProps) => {
+  return (
+    <NextLink href={href}>
+      <Button {...restProps} />
+    </NextLink>
+  );
+};
+
+Button.Link = Link;
 
 export { Button };
