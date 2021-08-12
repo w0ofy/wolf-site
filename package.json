@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext .ts,.tsx",
-    "prettify": "pretty-quick"
+    "lint": "eslint '**/*{.ts,.tsx,.js}' --fix",
+    "prettify": "pretty-quick --pattern '**/*.*(js|ts|tsx)'"
   },
   "husky": {
     "hooks": {
@@ -20,7 +20,6 @@
     "classnames": "^2.3.1",
     "next": "11.0.1",
     "normalize.css": "^8.0.1",
-    "prettier": "^2.3.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.37.5"
@@ -31,9 +30,13 @@
     "@typescript-eslint/parser": "^4.29.1",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.1",
+    "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
     "typescript": "4.3.5"
   }

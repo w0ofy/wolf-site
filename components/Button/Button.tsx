@@ -12,7 +12,6 @@ export type ButtonProps = {
 const Button = ({ icon, children, ...restProps }: ButtonProps) => {
   return (
     <button className={styles.btn} {...restProps}>
-      {/** @ts-ignore Icon type should work just fine - @todo investigate why throws a type error */}
       {icon && <Icon icon={icon} />}
       {children && <Typography.Button>{children}</Typography.Button>}
     </button>

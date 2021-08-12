@@ -3,6 +3,7 @@ import { Typography } from 'components/Typography';
 import styles from 'styles/Home.module.scss';
 import { Nav, NavItem } from 'components/Nav';
 import { Header } from 'components/Header/Header';
+import { Emoji } from 'components/Emoji';
 
 /**
  * @todo create html resume
@@ -23,7 +24,7 @@ export default function Home() {
             I like building stellar teams and product.
           </Typography.Heading>
           <Typography.Heading>
-            Engineering frontend things @ 🤫
+            Engineering frontend things @ <Emoji aria-label="shhh">🤫</Emoji>
             <Typography.Sup> ...coming soon</Typography.Sup>
           </Typography.Heading>
           <Nav>
