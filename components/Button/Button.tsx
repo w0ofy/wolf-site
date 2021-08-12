@@ -1,5 +1,4 @@
-import React, { forwardRef } from 'react';
-import NextLink from 'next/link';
+import React from 'react';
 import styles from './Button.module.scss';
 import { Typography } from 'components/Typography';
 import { Icon, IconProps } from 'components/Icon/Icon';
@@ -18,14 +17,6 @@ const Button = ({ icon, children, ...restProps }: ButtonProps) => {
   );
 };
 
-const Link = ({ href, ...restProps }: { href: string } & ButtonProps) => {
-  return (
-    <NextLink href={href}>
-      <Button {...restProps} />
-    </NextLink>
-  );
-};
-
-Button.Link = Link;
+export type ButtonLinkProps = { href: string } & ButtonProps;
 
 export { Button };

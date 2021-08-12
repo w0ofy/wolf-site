@@ -1,38 +1,6 @@
 .resume.container {
   padding: 3rem 3rem 0 3rem;
 
-  .actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-
-  .header {
-    display: flex;
-    width: 100%;
-    max-width: 82rem;
-    height: 60px;
-    margin: 0 auto 1rem;
-    .title-group {
-      flex: auto;
-    }
-    .info {
-      display: flex;
-      justify-content: flex-end;
-      font-size: 1rem;
-      flex: auto;
-      text-align: left;
-      & > ul {
-        list-style-type: none;
-        & > li {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-
   .main {
     display: flex;
     flex-direction: column;

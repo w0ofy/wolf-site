@@ -29,9 +29,7 @@ export default function Home() {
           </Typography.Heading>
           <Nav>
             <NavItem href="mailto:bigwoof91@gmail.com">Email</NavItem>
-            <NavItem href="/resume" isRoute>
-              Resume
-            </NavItem>
+            <NavItem to="/resume">Resume</NavItem>
             <NavItem href="https://github.com/bigwoof91">Github</NavItem>
             <NavItem href="https://www.linkedin.com/in/mikerosswolf/">
               LinkedIn
