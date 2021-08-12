@@ -9,7 +9,10 @@ import homeStyles from 'styles/Home.module.scss';
 
 export default function Resume() {
   return (
-    <div className={cx(homeStyles.container, styles.container)}>
+    <div
+      id="resume"
+      className={cx(styles.resume, styles.container, homeStyles.container)}
+    >
       <div className={styles.actions}>
         <div>
           <Button.Link icon="home" href="/" />

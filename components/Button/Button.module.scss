@@ -4,10 +4,11 @@
   align-items: center;
   max-height: auto;
   padding: 0.8rem 1.4rem;
-  border: 0;
+  border: 0.5px solid var(--border-color);
   border-radius: 0.8rem;
   color: var(--font-color);
   background-color: var(--btn-bg-color);
+  box-shadow: var(--btn-shadow);
   font-size: 1.4rem;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
