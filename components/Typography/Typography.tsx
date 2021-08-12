@@ -1,15 +1,9 @@
 import React, { ReactElement } from 'react';
 import cx from 'classnames';
 import styles from './Typography.module.scss';
+import { isEqual } from 'utils/isEqual';
 
-type Variants = 'h1' | 'h3' | 'span' | 'p' | 'sup' | 'button';
-export type TypographyProps = {
-  variant?: Variants;
-  alt?: 'resume';
-  children: React.ReactNode;
-};
-
-const TAGS: Record<Variants, any> = {
+const TAGS: Record<string, any> = {
   h1: 'h1',
   h3: 'h3',
   span: 'span',
@@ -17,11 +11,27 @@ const TAGS: Record<Variants, any> = {
   sup: 'sup',
   button: 'span',
 };
+const ALTERNATES = ['resume'] as const;
+
+type Alt = typeof ALTERNATES[number];
+type Variants = keyof typeof TAGS;
+export type TypographyProps = {
+  variant?: Variants;
+  alt?: Alt;
+  children: React.ReactNode;
+};
 
 const Typography = ({ alt, children, variant = 'p' }: TypographyProps) => {
   const Tag = TAGS[variant];
-  const altClassName = alt ? styles[alt] : '';
-  return <Tag className={cx(styles[variant], altClassName)}>{children}</Tag>;
+  return (
+    <Tag
+      className={cx(styles[variant], {
+        [styles.resume]: isEqual<Alt>('resume', alt),
+      })}
+    >
+      {children}
+    </Tag>
+  );
 };
 
 type TypographyComponentProps<T> = React.HTMLAttributes<T> &
