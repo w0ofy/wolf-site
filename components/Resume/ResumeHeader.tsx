@@ -1,6 +1,7 @@
 import { Typography } from 'components/Typography';
 import { Link } from 'components/Link';
 import styles from './ResumeHeader.module.scss';
+import { ROUTES } from 'constants/routes';
 
 const ResumeHeader = () => {
   return (
@@ -12,7 +13,7 @@ const ResumeHeader = () => {
       <div className={styles['info']}>
         <ul>
           <li>
-            <Link to="/resume">mikerwolf.com</Link>
+            <Link to={ROUTES.RESUME}>mikerwolf.com</Link>
           </li>
           <li>
             <Link href="mailto:bigwoof91@gmail.com">bigwoof91@gmail.com</Link>

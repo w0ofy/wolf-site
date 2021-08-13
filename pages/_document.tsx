@@ -7,6 +7,7 @@ class Document extends NextDocument {
       <Html className="dark-theme">
         <Head />
         <body>
+          <span id="loader" />
           <Main />
           <NextScript />
           <Script

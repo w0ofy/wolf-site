@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import { Typography } from 'components/Typography';
-import styles from 'styles/Home.module.scss';
 import { Nav, NavItem } from 'components/Nav';
 import { Header } from 'components/Header/Header';
 import { Emoji } from 'components/Emoji';
+import styles from 'styles/Home.module.scss';
+import { ROUTES } from 'constants/routes';
 
+const { RESUME } = ROUTES;
 /**
  * @todo create html resume
  */
@@ -29,7 +31,7 @@ export default function Home() {
           </Typography.Heading>
           <Nav>
             <NavItem href="mailto:bigwoof91@gmail.com">Email</NavItem>
-            <NavItem to="/resume">Resume</NavItem>
+            <NavItem to={RESUME}>Resume</NavItem>
             <NavItem href="https://github.com/bigwoof91">Github</NavItem>
             <NavItem href="https://www.linkedin.com/in/mikerosswolf/">
               LinkedIn
