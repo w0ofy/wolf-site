@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Button.module.scss';
 import { Typography } from 'components/Typography';
 import { Icon, IconProps } from 'components/Icon/Icon';

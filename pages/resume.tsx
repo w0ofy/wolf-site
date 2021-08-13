@@ -5,7 +5,7 @@ import styles from 'styles/Resume.module.scss';
 import homeStyles from 'styles/Home.module.scss';
 import { ResumeActions, ResumeHeader } from 'components/Resume';
 
-export default function Resume() {
+function Resume() {
   return (
     <div
       id="resume"
@@ -20,3 +20,5 @@ export default function Resume() {
     </div>
   );
 }
+
+export default Resume;

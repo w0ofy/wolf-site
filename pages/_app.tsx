@@ -11,8 +11,7 @@ function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    const handleStart = (url: string) => {
-      console.log(`Loading: ${url}`);
+    const handleStart = () => {
       NProgress.start();
     };
     const handleStop = () => {
@@ -32,4 +31,5 @@ function App({ Component, pageProps }: AppProps) {
 
   return <Component {...pageProps} />;
 }
+
 export default App;

@@ -3,7 +3,7 @@ import { Link } from 'components/Link';
 import styles from './ResumeHeader.module.scss';
 import { ROUTES } from 'constants/routes';
 
-const ResumeHeader = () => {
+const ResumeHeader: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles['title-group']}>

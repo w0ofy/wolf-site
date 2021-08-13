@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from 'components/Button/Button';
 
 const ThemeSwitcher = (props: React.HTMLAttributes<HTMLButtonElement>) => {

@@ -1,4 +1,3 @@
-import React, { ReactElement } from 'react';
 import cx from 'classnames';
 import styles from './Typography.module.scss';
 import { isEqual } from 'utils/isEqual';

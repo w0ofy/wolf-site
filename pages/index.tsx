@@ -10,7 +10,7 @@ const { RESUME } = ROUTES;
 /**
  * @todo create html resume
  */
-export default function Home() {
+function Home() {
   return (
     <>
       <Head>
@@ -42,3 +42,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

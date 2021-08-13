@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, LinkProps } from 'components/Link';
 import styles from './Nav.module.scss';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import cx from 'classnames';
 import IonIcon from '@reacticons/ionicons';
 import { RenamePropType } from 'utils/RenamePropType';
