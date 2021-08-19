@@ -1,42 +1,63 @@
+@mixin makeTypography($fontSize: 2rem, $lineHeight: 2rem, $fontWeight: 400) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin body {
+  @include makeTypography();
+}
+
+@mixin title {
+  @include makeTypography(10rem, 12rem);
+}
+
+@mixin heading {
+  @include makeTypography(3rem, 5rem);
+}
+
+@mixin resume {
+  @include makeTypography(5rem, 5rem);
+}
+
+@mixin sup {
+  @include makeTypography(1.6rem, 1.6rem);
+}
+
+@mixin button {
+  @include makeTypography(2rem, 2rem, 500);
+}
+
 .h1,
 .h2,
 .h3,
 .span,
 .p {
+  @include body;
   margin: 0;
   padding: 0;
   color: var(--font-color);
-  letter-spacing: 0;
-  line-height: 2rem;
-  font-size: 2rem;
-  font-weight: 400;
   letter-spacing: -0.05rem;
 }
 
 .h1 {
-  font-size: 10rem;
+  @include title;
   font-weight: 800;
-  line-height: 12rem;
+
   &.resume {
-    font-size: 5rem;
-    line-height: 1;
+    @include resume;
   }
 }
 
 .h3 {
-  font-size: 3rem;
-  line-height: 5rem;
+  @include heading;
 }
 
 .sup {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  @include sup;
   vertical-align: super;
 }
 
 .button {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 2rem;
-  vertical-align: super;
+  @include button;
 }

@@ -18,10 +18,11 @@ export type TypographyProps = {
   variant?: Variants;
   alt?: Alt;
   children: React.ReactNode;
+  tag?: Variants;
 };
 
-const Typography = ({ alt, children, variant = 'p' }: TypographyProps) => {
-  const Tag = TAGS[variant];
+const Typography = ({ alt, children, variant = 'p', tag }: TypographyProps) => {
+  const Tag = tag || TAGS[variant];
   return (
     <Tag
       className={cx(styles[variant], {
