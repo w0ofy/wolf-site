@@ -1,2 +1,3 @@
-export * from './ResumeActions';
-export * from './ResumeHeader';
+export * from './Actions';
+export * from './Header';
+export * from './Main';

@@ -1,9 +1,9 @@
 import { Typography } from 'components/Typography';
 import { Link } from 'components/Link';
-import styles from './ResumeHeader.module.scss';
+import styles from './Header.module.scss';
 import { ROUTES } from 'constants/routes';
 
-const ResumeHeader: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles['title-group']}>
@@ -13,7 +13,7 @@ const ResumeHeader: React.FC = () => {
       <div className={styles['info']}>
         <ul>
           <li>
-            <Link to={ROUTES.RESUME}>mikerwolf.com</Link>
+            <Link to={ROUTES.RESUME}>themikewolf.com</Link>
           </li>
           <li>
             <Link href="mailto:bigwoof91@gmail.com">bigwoof91@gmail.com</Link>
@@ -34,4 +34,4 @@ const ResumeHeader: React.FC = () => {
   );
 };
 
-export { ResumeHeader };
+export { Header };

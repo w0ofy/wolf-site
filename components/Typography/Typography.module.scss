@@ -1,13 +1,14 @@
 .h1,
-.h2,
 .h3,
 .span,
-.p {
+.p,
+.sup,
+.button {
   margin: 0;
   padding: 0;
   color: var(--font-color);
   letter-spacing: 0;
-  line-height: 2rem;
+  line-height: 1.2;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.05rem;
@@ -30,13 +31,13 @@
 
 .sup {
   font-size: 1.6rem;
-  line-height: 1.6rem;
+  line-height: 1;
   vertical-align: super;
 }
 
 .button {
   font-size: 2rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 1;
   vertical-align: super;
 }

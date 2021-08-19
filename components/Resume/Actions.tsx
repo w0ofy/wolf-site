@@ -1,9 +1,9 @@
 import { Link } from 'components/Link';
 import { ThemeSwitcher } from 'components/ThemeSwitcher/ThemeSwitcher';
 import { ROUTES } from 'constants/routes';
-import styles from './ResumeActions.module.scss';
+import styles from './Actions.module.scss';
 
-const ResumeActions: React.FC = () => {
+const Actions: React.FC = () => {
   return (
     <div className={styles.actions}>
       <div className={styles['actions-group']}>
@@ -17,4 +17,4 @@ const ResumeActions: React.FC = () => {
   );
 };
 
-export { ResumeActions };
+export { Actions };

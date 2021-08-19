@@ -1,19 +1,26 @@
 .header {
   display: flex;
   width: 100%;
+  height: auto;
   max-width: 82rem;
-  height: 60px;
-  margin: 0 auto 1rem;
+  min-height: 60px;
+  padding-bottom: 2rem;
+  margin: 0 auto 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   .title-group {
     flex: auto;
   }
   .info {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     font-size: 1rem;
     flex: auto;
     text-align: left;
     & > ul {
+      padding: 0;
+      padding-right: 1rem;
       list-style-type: none;
       & > li {
         margin-bottom: 1rem;
