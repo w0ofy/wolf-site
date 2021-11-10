@@ -5,7 +5,6 @@ import { Header } from 'components/Header/Header';
 import { Emoji } from 'components/Emoji';
 import styles from 'styles/Home.module.scss';
 import { ROUTES } from 'constants/routes';
-import { Link } from 'components/Link';
 
 const { RESUME } = ROUTES;
 /**
@@ -27,10 +26,8 @@ function Home() {
             I like building stellar teams and product.
           </Typography.Heading>
           <Typography.Heading>
-            Engineering frontend things @{' '}
-            <Link href="https://socialive.us" target="_blank" variant="heading">
-              Socialive
-            </Link>
+            Engineering frontend things @ <Emoji aria-label="shhh">🤫</Emoji>
+            <Typography.Sup> ...coming soon</Typography.Sup>
           </Typography.Heading>
           <Nav>
             <NavItem href="mailto:bigwoof91@gmail.com">Email</NavItem>
