@@ -2,15 +2,17 @@ import Head from 'next/head';
 import { Typography } from 'components/Typography';
 import { Nav, NavItem } from 'components/Nav';
 import { Header } from 'components/Header/Header';
-import { Emoji } from 'components/Emoji';
 import styles from 'styles/Home.module.scss';
 import { ROUTES } from 'constants/routes';
+import { Link } from 'components/Link';
 
 const { RESUME } = ROUTES;
 /**
  * @todo create html resume
+ * @todo create projects page
+ * @todo refactor css modules to emotion
  */
-function Home() {
+function Home(): React.ReactElement {
   return (
     <>
       <Head>
@@ -26,8 +28,14 @@ function Home() {
             I like building stellar teams and product.
           </Typography.Heading>
           <Typography.Heading>
-            Engineering frontend things @ <Emoji aria-label="shhh">🤫</Emoji>
-            <Typography.Sup> ...coming soon</Typography.Sup>
+            Engineering frontend things @{' '}
+            <Link
+              href="https://yieldstreet.com"
+              target="_blank"
+              variant="heading"
+            >
+              Yieldstreet
+            </Link>
           </Typography.Heading>
           <Nav>
             <NavItem href="mailto:bigwoof91@gmail.com">Email</NavItem>

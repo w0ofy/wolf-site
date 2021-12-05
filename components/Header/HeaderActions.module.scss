@@ -1,0 +1,15 @@
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  .actions-group {
+    display: flex;
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+}

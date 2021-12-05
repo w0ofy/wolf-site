@@ -5,7 +5,7 @@ import styles from 'styles/Resume.module.scss';
 import homeStyles from 'styles/Home.module.scss';
 import { ResumeActions, ResumeHeader } from 'components/Resume';
 
-function Resume() {
+function Resume(): React.ReactElement {
   return (
     <div
       id="resume"

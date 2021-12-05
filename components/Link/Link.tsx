@@ -22,14 +22,13 @@ const variantIs = (variant: LinkVariant, given: any) =>
   isEqual<LinkVariant>(variant, given);
 
 const Link = ({
-  target,
   href,
   to,
   children,
   variant = 'link',
   icon,
   ...restProps
-}: LinkProps) => {
+}: LinkProps): React.ReactElement => {
   const linkTo = (to as string) || (href as string);
   const props = !!to
     ? restProps
