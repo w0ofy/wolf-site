@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import NProgress from 'nprogress';
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps): React.ReactElement {
   const router = useRouter();
 
   useEffect(() => {

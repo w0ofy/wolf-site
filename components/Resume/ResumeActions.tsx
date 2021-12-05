@@ -1,19 +1,13 @@
 import { Link } from 'components/Link';
-import { ThemeSwitcher } from 'components/ThemeSwitcher/ThemeSwitcher';
-import { ROUTES } from 'constants/routes';
-import styles from './ResumeActions.module.scss';
+import { HeaderActions } from 'components/Header/HeaderActions';
 
-const ResumeActions: React.FC = () => {
+const ResumeActions = (): React.ReactElement => {
   return (
-    <div className={styles.actions}>
-      <div className={styles['actions-group']}>
-        <Link icon="home" to={ROUTES.HOME} variant="button" />
-      </div>
-      <div className={styles['actions-group']}>
+    <HeaderActions
+      rightAlignActions={
         <Link href="/resume.pdf" icon="download" variant="button" />
-        <ThemeSwitcher />
-      </div>
-    </div>
+      }
+    />
   );
 };
 
