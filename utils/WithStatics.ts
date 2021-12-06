@@ -17,5 +17,5 @@ export type WithStatics<
   C extends React.ComponentType<any>,
   StaticCmps extends {
     [attachedComponents: string]: React.ComponentType<any>;
-  } = {}
+  } = Record<string, any>
 > = C & StaticCmps;

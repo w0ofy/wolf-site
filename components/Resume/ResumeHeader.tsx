@@ -1,36 +1,64 @@
 import { Typography } from 'components/Typography';
 import { Link } from 'components/Link';
-import styles from './ResumeHeader.module.scss';
 import { ROUTES } from 'constants/routes';
+import styled from '@emotion/styled';
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 82rem;
+  height: 60px;
+  margin: 0 auto 1rem;
+`;
+
+const TitleGroup = styled.div`
+  flex: auto;
+`;
+
+const ContactInfo = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  flex: auto;
+  text-align: left;
+`;
+
+const UL = styled.ul`
+  list-style-type: none;
+`;
+
+const LI = styled.li`
+  margin-bottom: 1rem;
+`;
 
 const ResumeHeader: React.FC = () => {
   return (
-    <div className={styles.header}>
-      <div className={styles['title-group']}>
+    <Container>
+      <TitleGroup>
         <Typography.Title alt="resume">Mike Wolf</Typography.Title>
         <Typography>Engineering Manager, Frontend</Typography>
-      </div>
-      <div className={styles['info']}>
-        <ul>
-          <li>
+      </TitleGroup>
+      <ContactInfo>
+        <UL>
+          <LI>
             <Link to={ROUTES.RESUME}>mikerwolf.com</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link href="mailto:bigwoof91@gmail.com">bigwoof91@gmail.com</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </LI>
+        </UL>
+        <UL>
+          <LI>
             <Link href="https://github.com/bigwoof91">Github</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link href="https://www.linkedin.com/in/mikerosswolf/">
               LinkedIn
             </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+          </LI>
+        </UL>
+      </ContactInfo>
+    </Container>
   );
 };
 

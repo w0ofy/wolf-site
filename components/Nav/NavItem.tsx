@@ -1,13 +1,17 @@
 import { Link, LinkProps } from 'components/Link';
-import styles from './Nav.module.scss';
+import styled from '@emotion/styled';
+
+const StyledNavItem = styled.div`
+  margin-right: 2rem;
+`;
 
 export type NavItemProps = LinkProps;
 
-const NavItem = (props: NavItemProps) => {
+const NavItem = (props: NavItemProps): React.ReactElement => {
   return (
-    <div className={styles['nav-item']}>
+    <StyledNavItem>
       <Link {...props} />
-    </div>
+    </StyledNavItem>
   );
 };
 

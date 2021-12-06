@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { Typography } from 'components/Typography';
 import { Nav, NavItem } from 'components/Nav';
-import { Header } from 'components/Header/Header';
-import styles from 'styles/Home.module.scss';
+import { Header } from 'components/Header';
 import { ROUTES } from 'constants/routes';
 import { Link } from 'components/Link';
+import { Main, Container } from 'components/common';
 
 const { RESUME } = ROUTES;
 /**
@@ -20,9 +20,9 @@ function Home(): React.ReactElement {
         <meta name="description" content="Engineering Dude | Mike Wolf" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
+      <Container>
         <Header />
-        <main className={styles.main}>
+        <Main>
           <Typography.Title>Mike Wolf</Typography.Title>
           <Typography.Heading>
             I like building stellar teams and product.
@@ -45,8 +45,8 @@ function Home(): React.ReactElement {
               LinkedIn
             </NavItem>
           </Nav>
-        </main>
-      </div>
+        </Main>
+      </Container>
     </>
   );
 }

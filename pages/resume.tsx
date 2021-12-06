@@ -1,23 +1,26 @@
-import cx from 'classnames';
 import { Typography } from 'components/Typography';
 import { Logo } from 'components/Logo';
-import styles from 'styles/Resume.module.scss';
-import homeStyles from 'styles/Home.module.scss';
 import { ResumeActions, ResumeHeader } from 'components/Resume';
+import { Container, Main } from 'components/common';
+import { css } from '@emotion/react';
 
+const containerCSS = css`
+  padding: 3rem 3rem 0 3rem;
+`;
+
+const mainCSS = css`
+  align-items: center;
+`;
 function Resume(): React.ReactElement {
   return (
-    <div
-      id="resume"
-      className={cx(styles.resume, styles.container, homeStyles.container)}
-    >
+    <Container css={containerCSS}>
       <ResumeActions />
       <ResumeHeader />
-      <div className={styles.main}>
+      <Main css={mainCSS}>
         <Logo style={{ marginBottom: '1rem' }} />
         <Typography.Heading>Under Construction</Typography.Heading>
-      </div>
-    </div>
+      </Main>
+    </Container>
   );
 }
 

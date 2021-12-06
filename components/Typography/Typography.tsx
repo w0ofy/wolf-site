@@ -1,34 +1,31 @@
-import cx from 'classnames';
-import styles from './Typography.module.scss';
 import { isEqual } from 'utils/isEqual';
+import { Alts, VARIANT_TAGS, VARIANTS, Variants, ALTS } from './variants';
 
-const TAGS: Record<string, any> = {
-  h1: 'h1',
-  h3: 'h3',
-  span: 'span',
-  p: 'p',
-  sup: 'sup',
-  button: 'span',
-};
-const ALTERNATES = ['resume'] as const;
-
-type Alt = typeof ALTERNATES[number];
-type Variants = keyof typeof TAGS;
 export type TypographyProps = {
   variant?: Variants;
-  alt?: Alt;
+  alt?: Alts;
   children: React.ReactNode;
-  tag?: Variants;
+  tag?: keyof JSX.IntrinsicElements;
 };
 
-const Typography = ({ alt, children, variant = 'p', tag }: TypographyProps) => {
-  const Tag = tag || TAGS[variant];
+const Typography = ({
+  alt,
+  children,
+  variant = 'p',
+  tag,
+  ...restProps
+}: TypographyProps): React.ReactElement => {
+  const Tag = tag || VARIANT_TAGS[variant];
+  let styles = VARIANTS[variant];
+  if (isEqual<Alts>('resume', alt)) {
+    styles = {
+      ...styles,
+      ...ALTS.resume,
+    };
+  }
+
   return (
-    <Tag
-      className={cx(styles[variant], {
-        [styles.resume]: isEqual<Alt>('resume', alt),
-      })}
-    >
+    <Tag css={styles} {...restProps}>
       {children}
     </Tag>
   );

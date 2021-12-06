@@ -1,5 +1,5 @@
 import { Link } from 'components/Link';
-import { HeaderActions } from 'components/Header/HeaderActions';
+import { HeaderActions } from 'components/common';
 
 const ResumeActions = (): React.ReactElement => {
   return (
