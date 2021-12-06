@@ -3,7 +3,7 @@ export type EmojiProps = {
   children: string;
 };
 
-const Emoji = (props: EmojiProps) => {
+const Emoji: React.FC<EmojiProps> = (props) => {
   return <span role="img" {...props} />;
 };
 

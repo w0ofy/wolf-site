@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'components/Button';
+import { Button, ButtonProps } from 'components/Button';
 import {
   LOCAL_THEME_KEY,
   DARK_CLASS,
@@ -40,7 +40,7 @@ const makeThemeUtils = (
   };
 };
 
-const ThemeSwitcher = (props: React.HTMLAttributes<HTMLButtonElement>) => {
+const ThemeSwitcher: React.FC<ButtonProps> = (props) => {
   const [theme, setTheme] = useState<string>(
     localStorage.getItem(LOCAL_THEME_KEY) || 'dark'
   );

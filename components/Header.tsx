@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   height: auto;
 `;
 
-const Header = (): React.ReactElement => {
+const Header: React.FC = () => {
   return (
     <StyledHeader>
       <Logo width={60} />

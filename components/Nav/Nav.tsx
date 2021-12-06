@@ -9,7 +9,7 @@ export type NavProps = {
   children: React.ReactNode;
 };
 
-const Nav = ({ children }: NavProps): React.ReactElement => {
+const Nav: React.FC<NavProps> = ({ children }) => {
   return <StyledNav>{children}</StyledNav>;
 };
 

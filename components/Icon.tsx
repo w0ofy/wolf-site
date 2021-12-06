@@ -25,7 +25,7 @@ export type IconProps = {
 } & React.ButtonHTMLAttributes<HTMLButtonElement> &
   IconProp;
 
-const Icon = ({ icon, size = 'sm' }: IconProps): React.ReactElement => {
+const Icon: React.FC<IconProps> = ({ icon, size = 'sm' }) => {
   return <StyledIonIcon name={icon} size={size} />;
 };
 

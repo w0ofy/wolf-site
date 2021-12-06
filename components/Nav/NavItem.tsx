@@ -7,7 +7,7 @@ const StyledNavItem = styled.div`
 
 export type NavItemProps = LinkProps;
 
-const NavItem = (props: NavItemProps): React.ReactElement => {
+const NavItem: React.FC<NavItemProps> = (props) => {
   return (
     <StyledNavItem>
       <Link {...props} />

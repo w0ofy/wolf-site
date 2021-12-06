@@ -1,7 +1,7 @@
 import { Link } from 'components/Link';
 import { HeaderActions } from 'components/common';
 
-const ResumeActions = (): React.ReactElement => {
+const ResumeActions: React.FC = () => {
   return (
     <HeaderActions
       rightAlignActions={

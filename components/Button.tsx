@@ -31,7 +31,7 @@ export type ButtonProps = {
 } & React.ButtonHTMLAttributes<HTMLButtonElement> &
   Partial<Pick<IconProps, 'icon'>>;
 
-const Button = ({ icon, children, ...restProps }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ icon, children, ...restProps }) => {
   return (
     <StyledButton {...restProps}>
       {icon && <Icon icon={icon} />}

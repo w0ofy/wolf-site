@@ -7,7 +7,7 @@ export type LogoProps = {
   width?: number;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-const Logo = ({ width = 112, ...restProps }: LogoProps) => {
+const Logo: React.FC<LogoProps> = ({ width = 112, ...restProps }) => {
   return (
     <Container {...restProps}>
       <svg

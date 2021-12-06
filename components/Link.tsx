@@ -49,14 +49,14 @@ export type LinkProps = {
   React.HTMLAttributes<HTMLAnchorElement> &
   Partial<Pick<IconProps, 'icon'>>;
 
-const Link = ({
+const Link: React.FC<LinkProps> = ({
   href,
   to,
   children,
   variant = 'link',
   icon,
   ...moreProps
-}: LinkProps): React.ReactElement => {
+}) => {
   const linkTo = (to as string) || (href as string);
   const restProps = !!to
     ? moreProps

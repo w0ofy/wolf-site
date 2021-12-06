@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InlineScript = ({ children }: { children: any }) => (
+const InlineScript: React.FC<{ children: any }> = ({ children }) => (
   <script dangerouslySetInnerHTML={{ __html: `(${children.toString()})();` }} /> // eslint-disable-line
 );
 
