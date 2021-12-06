@@ -42,7 +42,7 @@ const makeThemeUtils = (
 
 const ThemeSwitcher: React.FC<ButtonProps> = (props) => {
   const [theme, setTheme] = useState<string>(
-    localStorage.getItem(LOCAL_THEME_KEY) || 'dark'
+    localStorage.getItem(LOCAL_THEME_KEY) || DARK_CLASS
   );
 
   const handleThemeToggle = () => {
