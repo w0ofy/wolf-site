@@ -30,11 +30,11 @@ function Home(): React.ReactElement {
           <Typography.Heading>
             Engineering frontend things @{' '}
             <Link
-              href="https://yieldstreet.com"
+              href="https://futurestay.com"
               target="_blank"
               variant="heading"
             >
-              Yieldstreet
+              Futurestay
             </Link>
           </Typography.Heading>
           <Nav>
