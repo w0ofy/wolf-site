@@ -36,7 +36,7 @@ const ResumeHeader: React.FC = () => {
     <Container>
       <TitleGroup>
         <Typography.Title alt="resume">Mike Wolf</Typography.Title>
-        <Typography>Engineering Manager, Frontend</Typography>
+        <Typography>Engineering Leader</Typography>
       </TitleGroup>
       <ContactInfo>
         <UL>

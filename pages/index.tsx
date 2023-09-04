@@ -25,16 +25,16 @@ function Home(): React.ReactElement {
         <Main>
           <Typography.Title>Mike Wolf</Typography.Title>
           <Typography.Heading>
-            I like building stellar teams and product.
+            I love building stellar teams and product.
           </Typography.Heading>
           <Typography.Heading>
-            Engineering frontend things @{' '}
+            Follow me along{' '}
             <Link
-              href="https://futurestay.com"
+              href="https://github.com/bigwoof91"
               target="_blank"
               variant="heading"
             >
-              Futurestay
+              @ bigwoof91
             </Link>
           </Typography.Heading>
           <Nav>
