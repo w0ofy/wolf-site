@@ -25,7 +25,7 @@ function Home(): React.ReactElement {
         <Main>
           <Typography.Title>Mike Wolf</Typography.Title>
           <Typography.Heading>
-            I love building stellar teams and product.
+            I love building stellar teams and products.
           </Typography.Heading>
           <Typography.Heading>
             Follow me along{' '}
