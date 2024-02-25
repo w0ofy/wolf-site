@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "pflannery.vscode-versionlens",
+    "esbenp.prettier-vscode",
+    "kamikillerto.vscode-colorize",
+    "vscode-icons-team.vscode-icons",
+    "redhat.vscode-yaml",
+    "mikestead.dotenv",
+    "donjayamanne.githistory",
+    "wix.vscode-import-cost",
+    "acoreyj.restart-ts-eslint-server"
+  ]
+}

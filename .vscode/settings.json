@@ -1,0 +1,15 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "auto-close-tag.disableOnLanguage": ["typescript"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
