@@ -41,7 +41,7 @@ const ResumeHeader: React.FC = () => {
       <ContactInfo>
         <UL>
           <LI>
-            <Link to={ROUTES.RESUME}>mikerwolf.com</Link>
+            <Link to={ROUTES.RESUME}>themikewolf.com</Link>
           </LI>
           <LI>
             <Link href="mailto:bigwoof91@gmail.com">bigwoof91@gmail.com</Link>
