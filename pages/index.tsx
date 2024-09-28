@@ -28,13 +28,13 @@ function Home(): React.ReactElement {
             I love building stellar teams and products.
           </Typography.Heading>
           <Typography.Heading>
-            Follow me along{' '}
+            Engineering frontend things @{' '}
             <Link
-              href="https://github.com/bigwoof91"
+              href="https://blockworks.co/"
               target="_blank"
               variant="heading"
             >
-              @ bigwoof91
+              Blockworks
             </Link>
           </Typography.Heading>
           <Nav>
