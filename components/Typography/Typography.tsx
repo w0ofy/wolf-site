@@ -1,11 +1,14 @@
+import { cx } from 'utils/cx';
 import { isEqual } from 'utils/isEqual';
-import { Alts, VARIANT_TAGS, VARIANTS, Variants, ALTS } from './variants';
+import { type Alts, VARIANT_TAGS, type Variants } from './variants';
+import { alts, variants } from './variants.css';
 
 export type TypographyProps = {
   variant?: Variants;
   alt?: Alts;
   children: React.ReactNode;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: keyof React.JSX.IntrinsicElements;
+  className?: string;
 };
 
 const Typography = ({
@@ -13,19 +16,19 @@ const Typography = ({
   children,
   variant = 'p',
   tag,
+  className,
   ...restProps
 }: TypographyProps): React.ReactElement => {
   const Tag = tag || VARIANT_TAGS[variant];
-  let styles = VARIANTS[variant];
-  if (isEqual<Alts>('resume', alt)) {
-    styles = {
-      ...styles,
-      ...ALTS.resume,
-    };
-  }
+  /**
+   * `alt` replaces the variant styles rather than extending them — that is
+   * what the Emotion implementation did, because it spread `SerializedStyles`
+   * objects rather than the CSS they described.
+   */
+  const styles = isEqual<Alts>('resume', alt) ? alts.resume : variants[variant];
 
   return (
-    <Tag css={styles} {...restProps}>
+    <Tag className={cx(styles, className)} {...restProps}>
       {children}
     </Tag>
   );

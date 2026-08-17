@@ -1,22 +1,15 @@
-import { Typography } from 'components/Typography';
+import { Container, Main } from 'components/common';
 import { Logo } from 'components/Logo';
 import { ResumeActions, ResumeHeader } from 'components/Resume';
-import { Container, Main } from 'components/common';
-import { css } from '@emotion/react';
+import { Typography } from 'components/Typography';
+import * as styles from 'styles/resume.css';
 
-const containerCSS = css`
-  padding: 3rem 3rem 0 3rem;
-`;
-
-const mainCSS = css`
-  align-items: center;
-`;
 function Resume(): React.ReactElement {
   return (
-    <Container css={containerCSS}>
+    <Container className={styles.resumeContainer}>
       <ResumeActions />
       <ResumeHeader />
-      <Main css={mainCSS}>
+      <Main className={styles.resumeMain}>
         <Logo style={{ marginBottom: '1rem' }} />
         <Typography.Heading>Under Construction</Typography.Heading>
       </Main>

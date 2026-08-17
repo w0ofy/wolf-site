@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Button, ButtonProps } from 'components/Button';
+import { Button, type ButtonProps } from 'components/Button';
+import type React from 'react';
+import { useState } from 'react';
 import {
-  LOCAL_THEME_KEY,
   DARK_CLASS,
   LIGHT_CLASS,
-  ThemeClasses,
+  LOCAL_THEME_KEY,
+  type ThemeClasses,
 } from './constants';
 
 const switchThemeFrom = (from: ThemeClasses) => {
@@ -19,7 +20,7 @@ const switchThemeFrom = (from: ThemeClasses) => {
 };
 
 const makeThemeUtils = (
-  setState: React.Dispatch<React.SetStateAction<any>>
+  setState: React.Dispatch<React.SetStateAction<string>>,
 ) => {
   const classList = document.querySelector('html')?.classList;
   const isDark = classList?.contains(DARK_CLASS);
@@ -42,7 +43,7 @@ const makeThemeUtils = (
 
 const ThemeSwitcher: React.FC<ButtonProps> = (props) => {
   const [theme, setTheme] = useState<string>(
-    localStorage.getItem(LOCAL_THEME_KEY) || DARK_CLASS
+    localStorage.getItem(LOCAL_THEME_KEY) || DARK_CLASS,
   );
 
   const handleThemeToggle = () => {
