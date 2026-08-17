@@ -1,11 +1,10 @@
 module.exports = {
   reactStrictMode: true,
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
-
-    return config;
+  // Next 16 writes AGENTS.md/CLAUDE.md into the repo root by default.
+  agentRules: false,
+  // Temporary: keeps Emotion working on SWC until the vanilla-extract
+  // migration (phase 3) removes Emotion entirely.
+  compiler: {
+    emotion: true,
   },
 };

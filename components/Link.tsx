@@ -63,11 +63,9 @@ const Link: React.FC<LinkProps> = ({
     : { ...moreProps, target: '_blank', rel: 'noopener noreferrer' };
 
   return (
-    <NextLink href={linkTo} passHref>
-      <a css={variantStyles({ variant })} {...restProps}>
-        {icon && <Icon icon={icon} />}
-        {children && children}
-      </a>
+    <NextLink href={linkTo} css={variantStyles({ variant })} {...restProps}>
+      {icon && <Icon icon={icon} />}
+      {children && children}
     </NextLink>
   );
 };

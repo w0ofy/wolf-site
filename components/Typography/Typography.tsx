@@ -5,7 +5,7 @@ export type TypographyProps = {
   variant?: Variants;
   alt?: Alts;
   children: React.ReactNode;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: keyof React.JSX.IntrinsicElements;
 };
 
 const Typography = ({
