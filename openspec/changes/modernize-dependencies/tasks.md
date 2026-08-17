@@ -37,6 +37,6 @@
 
 ## 5. Final Verification
 
-- [ ] 5.1 Clean install from lockfile (`rm -rf node_modules && yarn`) and confirm no postinstall patching runs
-- [ ] 5.2 Confirm `next build` passes, no `@emotion` imports remain (`grep -r "@emotion"`), and pages render with visual parity
-- [ ] 5.3 Make a test commit to confirm the pre-commit hook fires
+- [x] 5.1 Clean install from lockfile (`rm -rf node_modules && yarn`) and confirm no postinstall patching runs
+- [x] 5.2 Confirm `next build` passes, no `@emotion` imports remain (`grep -r "@emotion"`), and pages render with visual parity
+- [x] 5.3 Make a test commit to confirm the pre-commit hook fires
