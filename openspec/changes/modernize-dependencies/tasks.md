@@ -11,11 +11,11 @@
 
 ## 2. Small Dependency Swaps
 
-- [ ] 2.1 Remove `node-fetch` and `@types/node-fetch`; switch any imports to global `fetch`
-- [ ] 2.2 Replace `nprogress` + `hooks/useNProgress.ts` with `next-nprogress-bar` in `pages/_app.tsx`; remove `@types/nprogress`
-- [ ] 2.3 Remove `patch-package`, `postinstall-postinstall`, the `postinstall` script, and the `patches/` directory
+- [x] 2.1 Remove `node-fetch` and `@types/node-fetch`; switch any imports to global `fetch`
+- [x] 2.2 Replace `nprogress` + `hooks/useNProgress.ts` with `next-nprogress-bar` in `pages/_app.tsx`; remove `@types/nprogress`
+- [x] 2.3 Remove `patch-package`, `postinstall-postinstall`, the `postinstall` script, and the `patches/` directory
 - [x] 2.4 Remove `@svgr/webpack` and its `next.config.js` webpack rule (no source file imports `.svg`; the Logo SVG is inline JSX)
-- [ ] 2.5 Verify `@reacticons/ionicons` works with React 19; if not, replace icon usage with ionicons SVGs via SVGR
+- [x] 2.5 Verify `@reacticons/ionicons` works with React 19; if not, replace icon usage with ionicons SVGs via SVGR
 
 ## 3. Styling Migration (Emotion → vanilla-extract)
 
