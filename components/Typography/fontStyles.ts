@@ -55,5 +55,5 @@ const ALT_FONT_STYLES = {
 
 type Alts = keyof typeof ALT_FONT_STYLES;
 
-export type { Variants, Alts };
-export { FONT_STYLES, ALT_FONT_STYLES };
+export type { Alts, Variants };
+export { ALT_FONT_STYLES, FONT_STYLES };

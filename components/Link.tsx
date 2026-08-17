@@ -1,5 +1,5 @@
+import { Icon, type IconProps } from 'components/Icon';
 import NextLink from 'next/link';
-import { Icon, IconProps } from 'components/Icon';
 import { cx } from 'utils/cx';
 import * as styles from './Link.css';
 

@@ -9,5 +9,5 @@ const VARIANT_TAGS: Record<Variants, Variants> = {
   button: 'span',
 };
 
-export type { Variants, Alts };
+export type { Alts, Variants };
 export { VARIANT_TAGS };

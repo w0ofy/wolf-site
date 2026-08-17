@@ -1,4 +1,4 @@
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
+import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 
 /**
@@ -11,6 +11,7 @@ class Document extends NextDocument {
         <Head>
           <script
             id="init-theme"
+            // biome-ignore lint/security/noDangerouslySetInnerHtml: static literal, no user input, and the theme class must land on <html> before first paint
             dangerouslySetInnerHTML={{
               __html: `(function () {
               const cl = document?.querySelector("html")?.classList;

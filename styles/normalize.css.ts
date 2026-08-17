@@ -168,12 +168,9 @@ globalStyle('button, select', {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-globalStyle(
-  "button, [type='button'], [type='reset'], [type='submit']",
-  {
-    WebkitAppearance: 'button',
-  }
-);
+globalStyle("button, [type='button'], [type='reset'], [type='submit']", {
+  WebkitAppearance: 'button',
+});
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -183,7 +180,7 @@ globalStyle(
   {
     borderStyle: 'none',
     padding: 0,
-  }
+  },
 );
 
 /**
@@ -193,7 +190,7 @@ globalStyle(
   "button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focusring, [type='submit']:-moz-focusring",
   {
     outline: '1px dotted ButtonText',
-  }
+  },
 );
 
 /**
@@ -248,7 +245,7 @@ globalStyle(
   "[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button",
   {
     height: 'auto',
-  }
+  },
 );
 
 /**

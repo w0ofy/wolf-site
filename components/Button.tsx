@@ -1,5 +1,5 @@
+import { Icon, type IconProps } from 'components/Icon';
 import { Typography } from 'components/Typography';
-import { Icon, IconProps } from 'components/Icon';
 import { cx } from 'utils/cx';
 import * as styles from './Button.css';
 

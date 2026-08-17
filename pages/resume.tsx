@@ -1,7 +1,7 @@
-import { Typography } from 'components/Typography';
+import { Container, Main } from 'components/common';
 import { Logo } from 'components/Logo';
 import { ResumeActions, ResumeHeader } from 'components/Resume';
-import { Container, Main } from 'components/common';
+import { Typography } from 'components/Typography';
 import * as styles from 'styles/resume.css';
 
 function Resume(): React.ReactElement {

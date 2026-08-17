@@ -1,4 +1,7 @@
-import { createGlobalTheme, createGlobalThemeContract } from '@vanilla-extract/css';
+import {
+  createGlobalTheme,
+  createGlobalThemeContract,
+} from '@vanilla-extract/css';
 
 /**
  * The theme is exposed as plain custom properties on `:root.light` /

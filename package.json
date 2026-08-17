@@ -7,13 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '**/*{.ts,.tsx,.js}' --fix",
-    "prettify": "pretty-quick --pattern '**/*.*(js|ts|tsx)'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn lint"
-    }
+    "lint": "biome check --write .",
+    "format": "biome format --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@reacticons/ionicons": "^5.5.2",
@@ -23,23 +19,13 @@
     "react-dom": "^19"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.8",
     "@types/node": "26.2.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "@typescript-eslint/parser": "^4.29.1",
     "@vanilla-extract/css": "^1.21.2",
     "@vanilla-extract/next-plugin": "^2.5.2",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "11.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.1",
-    "prettier": "^2.3.2",
-    "pretty-quick": "^3.1.1",
+    "husky": "^9",
     "typescript": "^7"
   }
 }

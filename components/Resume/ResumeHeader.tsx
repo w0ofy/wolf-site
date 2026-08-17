@@ -1,5 +1,5 @@
-import { Typography } from 'components/Typography';
 import { Link } from 'components/Link';
+import { Typography } from 'components/Typography';
 import { ROUTES } from 'constants/routes';
 import * as styles from './ResumeHeader.css';
 
@@ -16,7 +16,9 @@ const ResumeHeader: React.FC = () => {
             <Link to={ROUTES.RESUME}>themikewolf.com</Link>
           </li>
           <li className={styles.li}>
-            <Link href="mailto:mike.r.woof@gmail.com">mike.r.woof@gmail.com</Link>
+            <Link href="mailto:mike.r.woof@gmail.com">
+              mike.r.woof@gmail.com
+            </Link>
           </li>
         </ul>
         <ul className={styles.ul}>

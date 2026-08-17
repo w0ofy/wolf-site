@@ -1,5 +1,5 @@
 import IonIcon from '@reacticons/ionicons';
-import { RenamePropType } from 'utils/RenamePropType';
+import type { RenamePropType } from 'utils/RenamePropType';
 import * as styles from './Icon.css';
 
 type IonIconProps = Pick<React.ComponentProps<typeof IonIcon>, 'name'>;

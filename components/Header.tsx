@@ -1,6 +1,6 @@
 import { Logo } from 'components/Logo';
-import { ThemeSwitcher } from './Theme';
 import * as styles from './Header.css';
+import { ThemeSwitcher } from './Theme';
 
 const Header: React.FC = () => {
   return (

@@ -1,4 +1,4 @@
-import { Link, LinkProps } from 'components/Link';
+import { Link, type LinkProps } from 'components/Link';
 import * as styles from './NavItem.css';
 
 export type NavItemProps = LinkProps;

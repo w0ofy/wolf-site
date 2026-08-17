@@ -1,6 +1,6 @@
-import { isEqual } from 'utils/isEqual';
 import { cx } from 'utils/cx';
-import { Alts, VARIANT_TAGS, Variants } from './variants';
+import { isEqual } from 'utils/isEqual';
+import { type Alts, VARIANT_TAGS, type Variants } from './variants';
 import { alts, variants } from './variants.css';
 
 export type TypographyProps = {

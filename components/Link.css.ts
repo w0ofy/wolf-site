@@ -1,7 +1,7 @@
-import { styleVariants } from '@vanilla-extract/css';
 import type { StyleRule } from '@vanilla-extract/css';
-import { FONT_STYLES } from 'components/Typography/fontStyles';
+import { styleVariants } from '@vanilla-extract/css';
 import { buttonStyles } from 'components/Button.model';
+import { FONT_STYLES } from 'components/Typography/fontStyles';
 import { vars } from 'styles/vars.css';
 
 const linkStyles: StyleRule = {

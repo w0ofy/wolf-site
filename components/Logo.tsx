@@ -5,7 +5,11 @@ export type LogoProps = {
   width?: number;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-const Logo: React.FC<LogoProps> = ({ width = 112, className, ...restProps }) => {
+const Logo: React.FC<LogoProps> = ({
+  width = 112,
+  className,
+  ...restProps
+}) => {
   return (
     <div className={cx(styles.container, className)} {...restProps}>
       <svg
@@ -15,6 +19,7 @@ const Logo: React.FC<LogoProps> = ({ width = 112, className, ...restProps }) => 
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Mike Wolf</title>
         <g
           id="Page-1"
           stroke="none"

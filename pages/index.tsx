@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import { Typography } from 'components/Typography';
-import { Nav, NavItem } from 'components/Nav';
+import { Container, Main } from 'components/common';
 import { Header } from 'components/Header';
-import { ROUTES } from 'constants/routes';
 import { Link } from 'components/Link';
-import { Main, Container } from 'components/common';
+import { Nav, NavItem } from 'components/Nav';
+import { Typography } from 'components/Typography';
+import { ROUTES } from 'constants/routes';
+import Head from 'next/head';
 
 const { RESUME } = ROUTES;
 /**

@@ -29,11 +29,11 @@
 
 ## 4. Tooling Migration (ESLint/Prettier → Biome)
 
-- [ ] 4.1 Install `@biomejs/biome`; create `biome.json` matching current style (2-space indent, single quotes, semicolons) with recommended + a11y + React hooks rules
-- [ ] 4.2 Remove `eslint`, `prettier`, all `eslint-*` packages, `pretty-quick`, `.eslintrc`, `.prettierrc`
-- [ ] 4.3 Rewrite package.json scripts: `lint` → `biome check --write .`, add `format` → `biome format --write .`
-- [ ] 4.4 Upgrade husky to v9: replace the package.json `husky` block with `.husky/pre-commit` running `biome check --staged --write`
-- [ ] 4.5 Run Biome across the repo and resolve all reported issues
+- [x] 4.1 Install `@biomejs/biome`; create `biome.json` matching current style (2-space indent, single quotes, semicolons) with recommended + a11y + React hooks rules
+- [x] 4.2 Remove `eslint`, `prettier`, all `eslint-*` packages, `pretty-quick`, `.eslintrc`, `.prettierrc`
+- [x] 4.3 Rewrite package.json scripts: `lint` → `biome check --write .`, add `format` → `biome format --write .`
+- [x] 4.4 Upgrade husky to v9: replace the package.json `husky` block with `.husky/pre-commit` running `biome check --staged --write`
+- [x] 4.5 Run Biome across the repo and resolve all reported issues
 
 ## 5. Final Verification
 
