@@ -869,10 +869,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reacticons/ionicons@npm:^5.5.2":
-  version: 5.5.2
-  resolution: "@reacticons/ionicons@npm:5.5.2"
-  checksum: 10c0/3a745065f5b394d8eb1d3270f451e15bc7ba29046130e8bf01502a0d95fa8952cf4e7477312d4db398f0d75ed118b6db3bd2f37a854be8bc009b01118c383241
+"@reacticons/ionicons@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@reacticons/ionicons@npm:7.1.0"
+  checksum: 10c0/32fd7f2b3792acfd835796de9bda5b6f0fefed14b2f68d73336f6a97c05e4462b1254a042e7d9e59920b12c67a03e15e7a394726f1c4e040447281cd917be313
   languageName: node
   linkType: hard
 
@@ -2782,7 +2782,7 @@ __metadata:
   dependencies:
     "@biomejs/biome": "npm:^2.5.8"
     "@netlify/plugin-nextjs": "npm:^5.15.13"
-    "@reacticons/ionicons": "npm:^5.5.2"
+    "@reacticons/ionicons": "npm:^7.1.0"
     "@types/node": "npm:26.2.0"
     "@types/react": "npm:^19"
     "@types/react-dom": "npm:^19"
