@@ -5,7 +5,7 @@ const ResumeActions: React.FC = () => {
   return (
     <HeaderActions
       rightAlignActions={
-        <Link href="/resume.pdf" icon="download" variant="button" />
+        <Link href="/michael-wolf-resume.pdf" icon="download" variant="button" />
       }
     />
   );
