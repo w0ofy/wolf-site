@@ -1,15 +1,13 @@
-import styled from '@emotion/styled';
+import { cx } from 'utils/cx';
+import * as styles from './Logo.css';
 
-const Container = styled.div`
-  display: flex;
-`;
 export type LogoProps = {
   width?: number;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-const Logo: React.FC<LogoProps> = ({ width = 112, ...restProps }) => {
+const Logo: React.FC<LogoProps> = ({ width = 112, className, ...restProps }) => {
   return (
-    <Container {...restProps}>
+    <div className={cx(styles.container, className)} {...restProps}>
       <svg
         width={width}
         height={width + 13}
@@ -42,7 +40,7 @@ const Logo: React.FC<LogoProps> = ({ width = 112, ...restProps }) => {
           </g>
         </g>
       </svg>
-    </Container>
+    </div>
   );
 };
 

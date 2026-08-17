@@ -10,7 +10,6 @@ const { RESUME } = ROUTES;
 /**
  * @todo create html resume
  * @todo create projects page
- * @todo refactor css modules to emotion
  */
 function Home(): React.ReactElement {
   return (
@@ -38,9 +37,9 @@ function Home(): React.ReactElement {
             </Link>
           </Typography.Heading>
           <Nav>
-            <NavItem href="mailto:bigwoof91@gmail.com">Email</NavItem>
+            <NavItem href="mailto:mikr.r.woof@gmail.com">Email</NavItem>
             <NavItem to={RESUME}>Resume</NavItem>
-            <NavItem href="https://github.com/bigwoof91">Github</NavItem>
+            <NavItem href="https://github.com/w0ofy">Github</NavItem>
             <NavItem href="https://www.linkedin.com/in/mikerosswolf/">
               LinkedIn
             </NavItem>

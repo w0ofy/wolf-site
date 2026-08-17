@@ -19,13 +19,13 @@
 
 ## 3. Styling Migration (Emotion → vanilla-extract)
 
-- [ ] 3.1 Install `@vanilla-extract/css` and `@vanilla-extract/next-plugin`; wire the plugin into next.config.js
-- [ ] 3.2 Port the theme from `styles/styles.tsx` to a vanilla-extract theme (`createTheme`), exporting typed tokens
-- [ ] 3.3 Port `styles/normalizeStyles.ts` to `globalStyle` calls and import once in `pages/_app.tsx`
-- [ ] 3.4 Migrate leaf components (`Button`, `Emoji`, `Icon`, `Logo`, `Link`, `common/*`) to `.css.ts` styles + `className`
-- [ ] 3.5 Migrate `Typography` (variants via `styleVariants`/recipes), `Nav`, `Header`, `Resume/*`, and `pages/resume.tsx`
-- [ ] 3.6 Remove `@emotion/react`, `@emotion/styled`, `compiler.emotion`, `jsxImportSource` from tsconfig, and delete `components/Theme` provider wiring if now unused
-- [ ] 3.7 Compare each page visually against the pre-migration site and fix regressions
+- [x] 3.1 Install `@vanilla-extract/css` and `@vanilla-extract/next-plugin`; wire the plugin into next.config.js
+- [x] 3.2 Port the theme from `styles/styles.tsx` to a vanilla-extract theme (`createTheme`), exporting typed tokens
+- [x] 3.3 Port `styles/normalizeStyles.ts` to `globalStyle` calls and import once in `pages/_app.tsx`
+- [x] 3.4 Migrate leaf components (`Button`, `Emoji`, `Icon`, `Logo`, `Link`, `common/*`) to `.css.ts` styles + `className`
+- [x] 3.5 Migrate `Typography` (variants via `styleVariants`/recipes), `Nav`, `Header`, `Resume/*`, and `pages/resume.tsx`
+- [x] 3.6 Remove `@emotion/react`, `@emotion/styled`, `compiler.emotion`, `jsxImportSource` from tsconfig, and delete `components/Theme` provider wiring if now unused
+- [x] 3.7 Compare each page visually against the pre-migration site and fix regressions
 
 ## 4. Tooling Migration (ESLint/Prettier → Biome)
 

@@ -1,16 +1,11 @@
-import styled from '@emotion/styled';
-
-const StyledNav = styled.nav`
-  display: flex;
-  padding: 3rem 0;
-`;
+import * as styles from './Nav.css';
 
 export type NavProps = {
   children: React.ReactNode;
 };
 
 const Nav: React.FC<NavProps> = ({ children }) => {
-  return <StyledNav>{children}</StyledNav>;
+  return <nav className={styles.nav}>{children}</nav>;
 };
 
 export { Nav };
