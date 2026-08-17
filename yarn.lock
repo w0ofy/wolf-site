@@ -792,6 +792,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@netlify/plugin-nextjs@npm:^5.15.13":
+  version: 5.15.13
+  resolution: "@netlify/plugin-nextjs@npm:5.15.13"
+  checksum: 10c0/38b8cc50dd36269574a53bf20f2a7eb6459c8fc789f16b63cccc67eeab9c924619804ed2154382a0dfe4aa34180e01f6d69e906445fc5bf9432510a0e7fdd482
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:16.3.1":
   version: 16.3.1
   resolution: "@next/env@npm:16.3.1"
@@ -2774,6 +2781,7 @@ __metadata:
   resolution: "wolf-site@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^2.5.8"
+    "@netlify/plugin-nextjs": "npm:^5.15.13"
     "@reacticons/ionicons": "npm:^5.5.2"
     "@types/node": "npm:26.2.0"
     "@types/react": "npm:^19"
